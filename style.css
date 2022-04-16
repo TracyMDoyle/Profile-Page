@@ -1,0 +1,182 @@
+* {
+	outline: 0;
+	padding: 0;
+	margin: 0;
+    font-family: 'Roboto', sans-serif;
+    /* CSS resets to adjust for all browsers */
+	}
+
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    display: inline-block;
+    padding: 20px;
+}
+
+nav {
+    height: 90px;
+    width: 90vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 20px 40px;
+}
+
+.lefttop{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.logo {
+    color: white;
+    font-size: 35px;
+    padding: 20px;
+}
+
+.nav-links { 
+    list-style: none;
+    color: white;
+    display:flex; 
+        
+}
+
+.nav-links > li a {
+    color: white;
+    margin: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    justify-content: flex-start;
+}
+
+.righttop{
+    margin-left: 30px;
+}
+
+.signout {
+    padding: 8px 15px;
+    background-color: lightseagreen;
+    color: aliceblue;
+    
+}
+
+.main {
+    width: 100vw;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    align-items: flex-start;
+    /* container for two main columns in center page */
+
+}
+
+.header {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.mainleft {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    flex: 1;
+}
+
+#greenbar {
+    height: 90px;
+    background-color: lightseagreen;
+    margin-bottom: -90px;
+}
+
+.personalinfo {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-style: solid;
+    margin-bottom: 20px;
+}
+
+.resume{
+    border-style: solid;
+}
+
+.mainright{
+    flex: .75;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+}
+.people{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.people > li{
+    list-style: none;
+    align-items: center;
+    padding: 10px;
+}
+#profile{
+    border-radius: 50%;
+    justify-content: center;
+    height: 125px;
+    width: 125px;
+}
+
+.icons {
+    height: 25px;
+    width: 25px;
+    margin: 0px 5px;
+}
+
+#mapmark{
+    height: 25px;
+    width: 20px;
+    /* adjustment for map marker, it needed a taller height than other icons */
+}
+
+.friend {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+}
+
+.circle, .oval{
+    border-radius: 75%;
+    background-color: gray;
+    padding: 10px 20px;
+    margin-right: 5px;
+    /* styling behind the numbers within the black headers */
+}
+
+.connections, .requests {
+    border-style: solid;
+    margin-bottom: 20px;
+    
+}
+
+.more{
+    border-top: solid;
+    padding: 10px;
+}
+
+li{
+    display: flex;
+    align-items: center;
+    /* centers all li items under connection requests and connections */
+}
+
+h3 {
+    display: flex;
+    align-items: center;
+    /* centering fix for edit profile text and edit profile text next to icons*/
+}

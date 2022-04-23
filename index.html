@@ -30,12 +30,13 @@
                 <div id="greenbar"></div>
                 <div class="personalinfo">
                     <img class="circlepic" id="profile" src="./images/jane-m.jpg" alt="Jane's Picture">
-                    <h1>Jane Doe</h1>
+                    <h1 id="profilename">Jane Doe</h1>
                     <h3><img class="icons" id="mapmark" src="./icons/map-marker.png" alt="Location Marker">Seattle</h3>
                     <p>Developer | Engineer | Problem Solver</p>
                     <p>Master of shadows and the Internet!</p>
                     <h3><img class="icons" src="./icons/gear.png" alt="Settings Wheel">
-                        <a href="#">edit profile</a></h3>
+                        <button class="profilechange" onclick="changename()">edit profile</button>
+                    </h3>
                 </div>
                 <div class="resume">
                     <h2 class="header">Education</h2>
@@ -46,21 +47,21 @@
             </div>
             <div class="mainright">
                 <div class="requests">
-                    <h2 class="header"><span class="circle">2</span> Connection Requests</h2>
+                    <h2 class="header"><span class="circle" id="conreq">2</span> Connection Requests</h2>
                     <ul class="people">
-                        <li><img class="friend" src="./images/todd-s.jpg" alt="todd">Todd E
-                            <img class="icons" src="./icons/accept-circle.png" alt="yes">
-                            <img class="icons" src="./icons/close-circle.png" alt="no">
+                        <li id="request1"><img class="friend" src="./images/todd-s.jpg" alt="todd">Todd E
+                            <img class="icons2" onclick="keep()" src="./icons/accept-circle.png" alt="yes" onclick='accept("#request1")'>
+                            <img class="icons2" onclick="goaway()" src="./icons/close-circle.png" alt="no" onclick='ignore("request1")'>
                         </li>
-                        <li>
+                        <li id="request2">
                             <img class="friend" src="./images/phil-s.jpg" alt="phil">Phil K
-                            <img class="icons" src="./icons/accept-circle.png" alt="yes">
-                            <img class="icons" src="./icons/close-circle.png" alt="no">
+                            <img class="icons3" onclick="keep2()" onclick="condown()" src=./icons/accept-circle.png alt="yes" onclick='accept("#request2")'>
+                            <img class="icons3" onclick="goaway2()" src="./icons/close-circle.png" alt="no" onclick='ignore("request2")'>
                         </li>
-                    </ul>
+                    </ul> 
                 </div>
                 <div class="connections">
-                    <h2 class="header"><span class="oval">500+</span>Your Connections</h2>
+                    <h2 class="header"><span class="oval" id="connections">418</span>Your Connections</h2>
                     <ul class="people">
                         <li><img class="friend" src="./images/adrien-s.jpg" alt="Adrien">Adrien D</li>
                         <li><img class="friend" src="./images/anne-s.jpg" alt="Anne">Anne J</li>
@@ -72,5 +73,6 @@
             </div>
         </div>
     </div>
+    <script src="./scripts.js"></script>
 </body>
 </html>
